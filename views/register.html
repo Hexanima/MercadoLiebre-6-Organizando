@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Registrarse - Mercado Liebre</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/"
+          ><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+        /></a>
+      </div>
+      <form action="" class="search">
+        <input type="search" placeholder="Buscar productos, marcas" />
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <p class="compras-cuotas">
+        <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
+        tarjeta de crédito
+      </p>
+      <nav>
+        <ul class="lista-superior">
+          <li>
+            <a href="">Ofertas</a>
+          </li>
+          <li>
+            <a href="">Tiendas Oficiales</a>
+          </li>
+          <li>
+            <a href="">Vender</a>
+          </li>
+          <li>
+            <a href="">Ayuda</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="fa-regular fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login"
+              >Ingresá <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              >Mis compras <i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <h1>Registrarse</h1>
+      <form action="">
+        <div class="form-data name">
+          <span class="error">*Debes ingresar un nombre</span>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre y apellido"
+          />
+        </div>
+        <div class="form-data user">
+          <span class="error">*Ingresa un usuario / En uso</span>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Nombre de usuario"
+          />
+        </div>
+        <div class="form-data email">
+          <span class="error">*Ingresa un mail</span>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+        </div>
+        <div class="form-data date">
+          <label for="birthDate" class="main">Fecha de nacimiento</label>
+          <span class="error">*Ingresa una fecha</span>
+          <input type="date" name="birthDate" id="birthDate" accept=".jpg"/>
+        </div>
+        <div class="form-data address">
+          <span class="error">*Ingresa una direccion</span>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Domicilio"
+          />
+        </div>
+        <div class="form-data profileType">
+          <label for="profileType" class="main">Perfil de usuario</label>
+          <span class="error">*Debes elegir algo</span>
+          <div>
+            <input
+              type="radio"
+              name="profileType"
+              id="comprador"
+              value="Comprador"
+            />
+            <label for="comprador">Comprador</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="profileType"
+              id="vendedor"
+              value="Vendedor"
+            />
+            <label for="vendedor">Vendedor</label>
+          </div>
+        </div>
+        <div class="form-data interests">
+          <label for="interests" class="main">Intereses</label>
+          <span class="error">*Elige almenos uno</span>
+          <div>
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests"
+              value="Electro"
+            />
+            <span>Electro</span>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests"
+              value="Moda"
+            />
+            <span>Moda</span>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests"
+              value="Hogar"
+            />
+            <span>Hogar</span>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests"
+              value="Jugueteria"
+            />
+            <span>Jugueteria</span>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests"
+              value="Vida sana"
+            />
+            <span>Vida sana</span>
+          </div>
+        </div>
+        <div class="form-data photo">
+          <label for="photo" class="main">Foto de perfil</label>
+          <span class="error">*Ingresa una foto</span>
+          <input type="file" name="photo" id="photo" />
+        </div>
+        <div class="form-data pass">
+          <span class="error">*Ingresa una contraseña</span>
+          <input type="password" name="pass" id="pass" placeholder="Contraseña"/>
+        </div>
+        <div class="form-data repeatPass">
+          <span class="error">*Las contraseñas no coinciden</span>
+          <input type="password" name="repeatPass" id="prepeatPassass" placeholder="Confirmar contraseña"/>
+        </div>
+        <div class="formManagement">
+          <button type="reset">Borrar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <article>
+        <i class="fa-solid fa-credit-card"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+          efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </article>
+      <article>
+        <i class="fa-solid fa-gift"></i>
+        <h4>Envío gratis desde $ 2.500</h4>
+        <p>
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </article>
+      <article>
+        <i class="fa-solid fa-user-shield"></i>
+        <h4>Seguridad, de principio a fin</h4>
+        <p>
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </article>
+      <span>Copyright © 1999-2020 MercadoLiebre S.R.L.</span>
+    </footer>
+  </body>
+</html>

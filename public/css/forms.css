@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+/* Variables */
+:root {
+  /* Colores */
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  /* Fuentes */
+  --fuentes: "Roboto", sans-serif;
+  /* Tamaños tipografia */
+  --parrafos: 12px;
+  --titulos: 24px;
+  --precio: 18px;
+  --descuento: 16px;
+  --descripcion: 16px;
+}
+
+.error {
+    color: red;
+    font-weight:lighter;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+label.main {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main {
+  padding: 10px;
+}
+
+main h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main form div.form-data {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main form div.form-data input {
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+main form div.profileType {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 30px;
+}
+
+main form div.profileType label {
+  width: 100%;
+}
+
+main form div.profileType div {
+  display: flex;
+  gap: 20px;
+}
+
+main form div.interests {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+main form div.interests div {
+  display: flex;
+  gap: 15px;
+}
+
+main form div.formManagement {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+main form div.formManagement button {
+  border: none;
+  background-color: var(--celeste);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  width: 100%;
+}

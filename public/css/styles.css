@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+/* Variables */
+:root {
+  /* Colores */
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  /* Fuentes */
+  --fuentes: "Roboto", sans-serif;
+  /* Tamaños tipografia */
+  --parrafos: 12px;
+  --titulos: 24px;
+  --precio: 18px;
+  --descuento: 16px;
+  --descripcion: 16px;
+}
+
+/* Generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuentes);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gris-claro);
+}
+
+p {
+  font-size: var(--parrafos);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  background-color: var(--amarillo);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header div.logo {
+  width: calc(50% - 2.5px);
+}
+
+header form.search {
+  width: calc(50% - 2.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header form.search input {
+  outline: none;
+  padding: 7px;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+header form.search button {
+  position: absolute;
+  padding: 2px;
+  display: block;
+  width: 20px;
+  border: none;
+  background-color: white;
+  color: var(--gris-oscuro);
+  border-radius: 5px;
+  font-size: 0.75rem;
+  right: 0;
+}
+
+header p.compras-cuotas {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+header nav ul li a {
+  font-size: var(--parrafos);
+}
+
+header div.burger-menu {
+  background-color: var(--celeste);
+  border-radius: 5px;
+  color: var(--gris-claro);
+  width: 35px;
+  padding: 7px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+/* Footer*/
+
+footer {
+  background-color: white;
+  padding: 50px 10px 10px;
+}
+
+footer article {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer article i {
+  font-size: 2em;
+  color: var(--celeste);
+  margin-bottom: 10px;
+}
+
+footer span {
+  font-size: var(--parrafos);
+}
+
+/* Media queries */
+
+@media (min-width: 361px) {
+  /* Header */
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header div.burger-menu {
+    display: none;
+  }
+
+  header div.logo {
+    width: calc(25% - 5px);
+  }
+
+  header form.search {
+    display: flex;
+    gap: 10px;
+    width: calc(50% - 5px);
+  }
+
+  header form.search input {
+    border-bottom: 1px solid var(--gris-oscuro);
+  }
+
+  header form.search button {
+    padding: 7px;
+    width: 30px;
+    border-bottom: 1px solid var(--gris-oscuro);  }
+
+  header p.compras-cuotas {
+    width: calc(25% - 5px);
+  }
+}
+
+@media (min-width: 769px) {
+  main.home__productos
+    section.seccion__productos
+    article.seccion__productos--tarjeta {
+    width: calc(25% - 10px);
+  }
+}
