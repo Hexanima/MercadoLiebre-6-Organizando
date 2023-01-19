@@ -142,6 +142,9 @@ header div.burger-menu {
 footer {
   background-color: white;
   padding: 50px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 footer article {
@@ -208,5 +211,27 @@ footer span {
     section.seccion__productos
     article.seccion__productos--tarjeta {
     width: calc(25% - 10px);
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer article {
+    width: 30%;
+  }
+
+  footer article i {
+    transition: all 0.5s ease;
+  }
+
+  footer article:hover i {
+    color: #0022AA;
+  }
+
+  footer span {
+    width: 100%;
+    text-align: center;
   }
 }

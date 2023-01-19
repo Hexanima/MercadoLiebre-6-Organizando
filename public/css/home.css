@@ -126,18 +126,42 @@ main.home__productos
   main.home__productos
     section.seccion__productos
     article.seccion__productos--tarjeta {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: calc(50% - 10px);
+    transition: all 0.5s ease;
   }
+
+  main.home__productos
+    section.seccion__productos
+    article.seccion__productos--tarjeta i{
+    transition: all 0.5s ease;
+  }
+
+  main.home__productos
+    section.seccion__productos
+    article.seccion__productos--tarjeta:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);}
 
   main.home__productos
     section.seccion__productos
     article.seccion__productos--tarjeta
     h5 {
-    display: inherit;
+      transition: all 0.5s ease;
     color: var(--gris-oscuro);
     font-weight: 500;
   }
+
+  main.home__productos
+    section.seccion__productos
+    article.seccion__productos--tarjeta:hover
+    h5 {
+      display: inherit;
+    }
+
+    main.home__productos
+    section.seccion__productos
+    article.seccion__productos--tarjeta:hover i{
+      rotate: -90deg;
+    }
 }
 
 @media (min-width: 769px) {

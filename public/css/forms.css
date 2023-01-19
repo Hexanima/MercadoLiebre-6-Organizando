@@ -103,4 +103,10 @@ main form div.formManagement button {
   padding: 10px;
   border-radius: 7px;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+main form div.formManagement button:hover {
+  background-color: #0022AA;
 }
